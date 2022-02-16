@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\fox89\Desktop\sorter x\SorterX.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F44A3238-33EC-40BC-9526-481E9E8E08D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SorterX</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SorterX\SorterX.cs" />
+    <Compile Include="SorterX\Stat.cs" />
+    <Compile Include="SorterX\MyDisplay.cs" />
+    <Compile Include="SorterX\Program.cs" />
+    <Compile Include="SorterX\Properties\Resources.cs" />
+    <Compile Include="SorterX\Properties\Settings.cs" />
+    <Compile Include="Sorter_20\Check.cs" />
+    <Compile Include="Sorter_20\Settings.cs" />
+    <Compile Include="Sorter_20\DirHelper.cs" />
+    <Compile Include="Sorter_20\Joke.cs" />
+    <Compile Include="Sorter_20\Log.cs" />
+    <Compile Include="Sorter_20\LogFormat.cs" />
+    <Compile Include="Sorter_20\PrepareHelper.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SorterX\Properties\Resources.resx" />
+    <EmbeddedResource Include="SorterX\SorterX.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
